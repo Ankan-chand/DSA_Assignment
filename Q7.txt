@@ -1,0 +1,3 @@
+If h is chosen from a universal collection of hash functions and is used to hash n keys into a table of size m, where n≤ m, the expected number of collisions involving a particular key x is less than 1.
+
+Explanation: Universal Hashing states that:- If h is chosen from a universal collection of hash functions and is used to hash n keys into a table of size m, where n <m, the expected number of collisions involving a particular key x is less than 1.

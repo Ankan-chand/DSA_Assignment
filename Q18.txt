@@ -1,0 +1,16 @@
+If the queue is implemented as a circular array with n-1 locations available for storing elements, then the maximum number of elements that can be stored in the queue is n-1. We can use the following formula to calculate the number of elements inthe queue:
+
+Number of elements = (rear- front + n) % n
+
+Here, "%" is the module operator, which gives the remainder when the first operand is divided by the second operand. 
+The formula works as follows:
+* (rear - front gives the number of elements between the front and rear pointers.
+* If rear >= front, this number is actual number of elements in the queue.
+* If rear < front, then the rear pointer has wrapped around to the beginning of the array and the
+  number of elements is n - (front-rear).
+* Adding n to the result ensures that the number of elements is always positive, even if the
+  rear pointer has wrapped around to the
+* beginning of the array.
+* Taking the result modulo n ensures that the number of elements is always 0 and n-1, inclusive. 
+
+Note that if the number of elements is n-1, the queue is either full or empty, depending on whether the front pointer is one position behind the rear pointer or the front and rear pointers are equal.
